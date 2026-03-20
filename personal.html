@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Info</title>
+    <style>
+        *{
+            padding: 10;
+            margin: 10;
+        }
+        header{
+            background-color: rgb(90, 90, 90);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            height: 50px;
+        }
+        .logo a{
+            color: white;
+            text-decoration: none;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 40px;
+        }
+        .c1{
+            
+            padding: 10px;
+            background-color: rgba(180, 237, 255, 0.356);
+            font-size: 20px;
+        }
+        .center{
+            text-align: center;
+            color: rgb(0, 0, 0);
+            background-image: url("bmw1.jpg") ;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            
+            margin-top: 10px;
+        }
+        .c2, .c3{
+            border: 2px solid red;
+            width: fit-content;
+            padding: 0 0 0 15px;
+            background-color: rgb(255, 251, 0);
+        }
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="">logo</a>
+        </div>
+        <div>
+           <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Service</a>
+            <a href="">Portfolio</a>
+            <a href="">Contact</a>
+           </nav>
+        </div>
+    </header>
+    <section class="center">
+        <div class="c1">
+        <h4>Yush Maskey</h4>
+        <p>Hi, i is me <b>Yush Maskey</b>, i is fine. i live <i>khorsane</i>. i read <b>BIT</b> at <b>GPLC</b> <i>"Green Peace Lincoln College"</i> </p>
+    </div>
+    </section>
+    <section class="grid">
+    <div class="c2">
+       <H1 style="text-decoration: underline;">My Achievements</H1>
+       <li>Winner of GPLC FF LAN 2025</li>
+       <li>Gold Medalist in Running</li>
+       <li>Silver Medalist in Volleyball</li>
+       <li>Bronze Medalist in Football</li> 
+    </div>
+    <div class="c3">
+        <h1 style="text-decoration: underline;">My Hobby</h1>
+        <li>Reading</li>
+        <li>Writing</li>
+        <li>Travelling</li>
+        <li>Sleeping</li>
+        <li>Playing</li>
+    </div>
+    </section>
+</body>
+</html>

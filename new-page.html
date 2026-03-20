@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-color: rgb(82, 79, 79);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            height: 50px;
+            border-radius: 10px;
+        }
+        .logo a{
+            color: white;
+            text-decoration: none;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 40px;
+            font-size: 18px;
+        }
+        .container{
+            width: 100%;
+            height: 90vh;
+            background-color: rgba(255, 0, 0, 0.486);
+            position: relative;
+            /* top: 10px; */
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        p{
+            text-align: justify;
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .container h2{
+            position: absolute;
+            left: 20%;
+            top: 43%;
+            transform: translate(-50%,-50%);
+            color: white;
+        }
+        .container p{
+            position: absolute;
+            left: 29%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+        }
+        .container button{
+            position: absolute;
+            left: 17%;
+            top: 60%;
+            transform: translate(-50%,-50%);
+            color: white;
+            padding: 10px 10px;
+            border-radius: 10px;
+            background-color: rgb(189, 2, 189);
+            border: none;
+        }
+        button:hover{
+            background-color: purple;
+            cursor: pointer;
+        }
+        .container1{
+            /* border: 2px solid black;  */
+            width: 250px;
+           
+            box-shadow: 0 0 10px rgba(0,0, 0,0.3);
+            border-radius: 10px;
+            /* padding: 10px; */
+            overflow: hidden;
+        }
+        .container1 img{
+            width: 100%;
+                height: 200px;
+        }
+        p.pp{
+            font-size: 14px;
+            color: gray;
+            /* margin:  */
+        }
+        span{
+            font-weight: bold;
+            color: red;}
+        .box1{
+                display: flex;
+                gap: 30px;
+                padding: 20px;
+        }    
+        .lr{
+                text-align: center;
+                margin-top: -20px;
+                width: 63%;
+                /* background: #000; */
+                display: grid;
+                place-items: center;
+                top: 10px;
+        }
+        h3{
+                font-size: 20px;
+        }
+        .logo img{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+         <a href="new-page.html"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/555/small/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png" alt="insta"></a> 
+        </div>
+        <nav>
+            <a href="form.html">Home</a>
+            <a href="formandtable.html">About</a>
+            <a href="table.html">Service</a>
+            <a href="tablework.html">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <img src="https://t3.ftcdn.net/jpg/07/53/95/70/360_F_753957094_P7auPgXTtoyXqhFNWOIMUyl6dgm8sCUe.jpg" alt="hero">
+        <h2>Travel without limits</h2>
+        <P>Create lifetime memories in unforgettable locations around the world</P>
+        <button>Choose your tour</button>
+    </div>
+    <div class="main">
+        <div class="box1">
+            <div class="container1">
+                <img src="https://images.pexels.com/photos/2649841/pexels-photo-2649841.jpeg?cs=srgb&dl=pexels-jose-almeida-999955-2649841.jpg&fm=jpg" height="150" alt="">
+                <div style="padding: 10px;"><p class="pp">TIGER</p>
+                <H3>Nepal ko danger tiger in chitwan </H3>
+                <p class="pp">Tiger is a very danger animal</p>
+                <p class="aa">by <span>Learning Robo</span></p> </div>
+            </div>
+            <div class="container1">
+                <img src="https://media.istockphoto.com/id/538449165/photo/beautiful-cloudscape-over-the-sea-sunset-shot.jpg?s=612x612&w=0&k=20&c=XwieRIV5Df3Azuk8tH3CnAlLA-GO5GBE7R7dKtb1POw=" height="150" alt="">
+                <div style="padding: 10px;"><p class="pp">SUNSET</p>
+                <H3>Koshi bata dekhine sunset dherei ramro xa</H3>
+                <p class="pp">Sunset is very beautiful to watch.</p>
+                <p class="aa">by <span>Learning Robo</span></p> </div>
+            </div>
+            <div class="container1">
+                <img src="https://cdn.zmescience.com/wp-content/uploads/2015/05/1379398021_lightning-wallpaper.jpg" height="150" alt="">
+                <div style="padding: 10px;"><p class="pp">LIGHTNING</p>
+                <H3>Lightning over the mountains</H3>
+                <p class="pp">Lightning is very dangerous 2 watch.</p>
+                <p class="aa">by <span>Learning Robo</span></p> </div>
+            </div>            
+        </div>
+        <div class="lr">
+                <p>Made with❤️by <span>Learning Robo</span></p>
+        </div>
+    </div>
+</body>
+</html>

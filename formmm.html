@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .err {
+        color: red;
+        font-size: 18px;
+        margin-top: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="" id="form">
+      <input type="text" placeholder="name" id="name" />
+      <div class="err" id="name-err"></div> <br>
+
+      <input type="email" placeholder="email" name="email" id="email" />
+      <div class="err" id="email-err"></div> <br>
+
+      <input type="text" placeholder="age" name="age" id="age" />
+      <div class="err" id="age-err"></div> <br>
+
+      <input placeholder="password" type="password" name="password" id="password" />
+      <div class="err" id="passerr"></div> <br>
+
+      <input type="submit" value="submit" />
+    </form>
+    <script>
+      let isNameValid, isPasswordValid, isAgeValid, isEmailValid;
+      document.getElementById("email").addEventListener("keyup", () => {
+        email = document.getElementById("email").value;
+        pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (pattern.test(email)) {
+          document.getElementById("email-err").innerText = "valid email";
+          document.getElementById("email-err").style.color = "green"; 
+          isEmailValid = true;
+        } else {
+          document.getElementById("email-err").innerText = "invalid email";
+          isEmailValid = false;
+        }
+      });
+
+      document.getElementById("password").addEventListener("keyup", () => {
+        pass = document.getElementById("password").value;
+        pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/;
+        if (pattern.test(pass)) {
+          document.getElementById("passerr").innerText = "valid password";
+          isPasswordValid = true;
+        } else {
+          document.getElementById("passerr").innerText = "invalid password";
+          isPasswordValid = false;
+        }
+      });
+
+      document.getElementById("name").addEventListener("keyup", () => {
+        name = document.getElementById("name").value;
+        if (name == "") {
+          document.getElementById("name-err").innerHTML = "name is required";
+          isNameValid = false;
+        } else {
+          document.getElementById("name-err").innerText = "valid";
+          isNameValid = true;
+        }
+      });
+
+      document.getElementById("age").addEventListener("keyup", function () {
+        age = document.getElementById("age").value;
+        if (age.length < 0 || age.length > 3 || age > 120 || age < 18) {
+          document.getElementById("age-err").innerText =
+            "please enter valid age";
+            isAgeValid = false;
+        } else {
+          document.getElementById("age-err").innerText = "valid";
+          isAgeValid = true;
+        }
+      });
+      document.getElementById("form").addEventListener("submit", (e) =>{
+        if((!isEmailValid) || (!isNameValid) || (!isAgeValid) || (!isPasswordValid)){
+          e.preventDefault()
+        };
+      });
+    </script>
+  </body>
+</html>

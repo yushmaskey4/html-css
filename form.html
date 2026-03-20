@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        header{
+            background-color: rgb(82, 79, 79);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            height: 50px;
+            border-radius: 10px;
+        }
+        .logo a{
+            color: white;
+            text-decoration: none;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 40px;
+            font-size: 18px;
+        }
+        .logo img{
+            height: 50px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+         <a href="new-page.html"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/555/small/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png" alt="insta"></a> 
+        </div>
+        <nav>
+            <a href="new-page.html">Ghar</a>
+            <a href="form.html">Home</a>
+            <a href="formandtable.html">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <h1>Form</h1>
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name"> 
+        <br>
+        <label for="">Password:</label>
+        <input type="password" name="" id="password"> 
+        <br>
+        <label for="">Number:</label>
+        <input type="number" name="" id="number" min="1" max="5">
+        <br>
+        <label for="">Email:</label>
+        <input type="email" name="" id="" placeholder="Email">
+        <br>
+        <input type="checkbox" value="Yes" name="choose" id="yes">
+        <label for="yes">Yes</label>
+        <br>
+        <input type="checkbox" value="No" name="choose" id="no">
+        <label for="no">No</label>
+        <br>
+        <input type="file" accept="image/*, audio/*" multiple> <br>
+        <input type="date" name="" id="">        <input type="time" name="" id="">
+        <input type="datetime-local" name="" id=""><br>
+
+        <p>choose faculty</p>
+         <input type="radio" name="faculty" value="BIT" id="bit" checked>
+         <label for="bit">BIT</label>
+         <br>
+         <input type="radio" name="faculty" value="BCA" id="bca">
+         <label for="bca">BCA</label>
+         <br>
+         <input type="radio" name="faculty" value="BHM" id="bhm">
+         <label for="bhm">BHM</label><br>
+         <br>
+         <input type="color" name="" id="">
+         <label for="" >Choose color</label>
+          <br>
+          <label for="">Telephone:</label>
+         <input type="tel" name="" id="">
+         <br> <br>
+         <select name="" id="">
+            <option value="Select option" >Select Option</option>
+            <option value="BIT">BIT</option>
+            <option value="BCA">BCA</option>
+            <option value="BHM">BHM</option>
+         </select><br>
+         <textarea name="" id="" rows="10" cols="30" ></textarea><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>

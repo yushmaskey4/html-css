@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            height: 70px;
+            background-color: blue;
+            color: white;
+        }
+        .top{
+            background-color: grey;
+        }
+        .bottom{
+            background-color: yellow;
+        }
+        .right{
+            background-color: brown;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+        }
+        .left{
+            width: 60%;
+        }
+        .right{
+            width: 40%;
+        }
+        .right, .left{
+            height: 100vh;
+        }
+        .top, .bottom{
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav>Nav BAR</nav>
+    <div class="container">
+        <div class="left">
+            <div class="top">
+                top
+            </div>
+            <div class="bottom">
+                bot
+            </div>
+        </div>
+        <div class="right">
+            right
+        </div>
+    </div>
+    
+</body>
+</html>

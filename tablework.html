@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        th{
+            font-weight: normal;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        .logo img{
+            height: 50px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-color: rgb(82, 79, 79);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            height: 50px;
+            border-radius: 10px;
+        }
+        .logo a{
+            color: white;
+            text-decoration: none;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 40px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+         <a href="new-page.html"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/555/small/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png" alt="insta"></a> 
+        </div>
+        <nav>
+            <a href="new-page.html">Ghar</a>
+            <a href="form.html">Home</a>
+            <a href="formandtable.html">About</a>
+            <a href="table.html">Service</a>
+            <a href="tablework.html">Contact</a>
+        </nav>
+    </header>
+    <h1>Table</h1>
+    <table border="1">
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Monday</th>
+            <th rowspan="2">8:00 a.m.</th>
+            <th rowspan="2">5:00 p.m.</th>
+            <th>Introduction to XML</th>
+        </tr>
+        <tr>
+            <th>Validity: DTD and Relax NG</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Tuesday</th>
+            <th>8:00 a.m.</th>
+            <th>11:00 a.m.</th>
+            <th rowspan="2">XPath</th>
+        </tr>
+        <tr>
+            <th>11:00 a.m.</th>
+            <th>2:00 p.m.</th>
+        </tr>
+        <tr>
+            <th>2:00 p.m.</th>
+            <th>5:00 p.m.</th>
+            <th>XML </th>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <th>8:00 a.m.</th>
+            <th>12:00 p.m.</th>
+            <th>XSL Formating Object</th>
+        </tr>
+    </table>
+</body>
+</html>

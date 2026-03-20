@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      main{
+        color: red;
+        background: yellow;
+        text-decoration: dotted;
+      }
+      body {
+        background: #f4f4f4;
+      }
+      nav {
+        max-width: 100%;
+        background: green;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+      nav ul li {
+        margin-left: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+      }
+      nav ul li a:hover {
+        color: #00bcd4;
+      }
+      #menu-toggle {
+        display: none;
+      }
+      .menu-icon {
+        display: none;
+        cursor: pointer;
+        font-size: 28px;
+        color: white;
+      }
+      @media (max-width: 768px){
+        nav ul{
+            position: absolute;
+            background-color: green;
+            top: 47.6px;
+            right: 0%;
+            width: 180px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            /* display: none; */
+            /* max-height: 0; */
+            transform: translateX(100%);
+            transition: all 0.5s linear;
+            height: 100vh;
+            z-index: 99;
+        }
+        nav ul li{
+            margin: 17px 0;
+        }
+        .menu-icon{
+            display: block;
+        }
+        #menu-toggle:checked ~ ul{
+            transform: translateX(0%);
+            /* display: block; */
+            /* max-height: 300px; */
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Maskey</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>Hello Aasish Sir, mero responsive vayo ra side bata pani aaune banyo</main>
+  </body>
+</html>

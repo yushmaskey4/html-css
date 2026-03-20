@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 10px;
+            background-color: white;
+            border: #dfdfdf 1px solid;
+            box-shadow: #dfdfdf 2px 2px 5px 5px;
+        }
+        .footer{
+            text-align: center;
+            color: blueviolet;
+        }
+        th{
+            color: rgb(20, 20, 130);
+        }
+        tr:nth-child(odd) {
+            background-color: white;
+    }
+        tr:nth-child(even) {
+            background-color: #dfdfdf;
+            }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        tr td{
+            text-align: center;            
+        }
+        td{
+            padding: 10px;
+        }
+        .cm{
+            color: white;
+            background-color: green;
+            border-radius: 100px;
+        }
+        .ca{
+            color: white;
+            background-color: red;
+            border-radius: 100px;
+        }
+        .pe{
+            color: white;
+            background-color: orange;
+            border-radius: 100px;
+        }
+        button{
+            border: none;
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Recent Transactions</h2><hr>
+        <table >            
+            <tr>
+                <th >Transactions ID</th>
+                <th >Date</th>
+                <th >E-mail</th>
+                <th >Subscription</th>
+                <th >Status</th>
+            </tr>
+            <tr>
+                <td>LC00023000123</td>
+                <td>15/12/2025</td>
+                <td>name@gplc.com.np</td>
+                <td>Monthly</td>
+                <td > <button class="cm">Completed</button></td>
+            </tr>
+            <tr>
+                <td>LC00023000123</td>
+                <td>15/12/2025</td>
+                <td>name@gplc.com.np</td>
+                <td>Monthly</td>
+                <td ><button class="ca">Cancelled</button></td>
+            </tr>
+            <tr>
+                <td>LC00023000123</td>
+                <td>15/12/2025</td>
+                <td>name@gplc.com.np</td>
+                <td>Lifetime</td>
+                <td><button class="pe">Pending</button></td>
+            </tr>
+            <tr>
+                <td>LC00023000123</td>
+                <td>15/12/2025</td>
+                <td>name@gplc.com.np</td>
+                <td>Yearly</td>
+                <td ><button class="cm">Completed</button></td>
+            </tr>
+            <tr>
+                <td>LC00023000123</td>
+                <td>15/12/2025</td>
+                <td>name@gplc.com.np</td>
+                <td>Monthly</td>
+                <td ><button class="cm">Completed</button></td>
+            </tr>
+            <tr >
+                <td colspan="5" class="footer">Load more transactions</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

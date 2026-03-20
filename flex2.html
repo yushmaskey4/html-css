@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            width: 100%;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .container1{
+            width: 100%;
+            gap: 10px;
+
+        }
+        .top{
+            display: flex;
+            width: 100%;
+            height: 200px;
+            gap: 10px;
+        }
+        .bot{
+            display: flex;
+            width: 100%;
+            height: 200px;
+            gap: 10px;
+        }
+        .l1{
+            width: 50%;            
+        }
+        .l2{
+            width: 50%;
+        }
+        .r1{
+            display: flex;
+            width: 50%;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .r2{
+            display: flex;
+            width: 50%;
+            flex-wrap: wrap;
+            gap: 10px;
+
+        }
+        .r1 div{
+            background-color: red;
+            width: 48%;
+        }
+        .r2 div{
+            background-color: red;
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="l1" style="background-color: orange;">
+                1
+            </div>
+                    <div class="r1">
+                        <div class="2">2</div>
+                        <div class="3">3</div>
+                        <div class="4">4</div>
+                        <div class="5">5</div>
+                    </div>
+        </div>
+        </div>
+        <din class="container1">
+                <div class="bot">
+            <div class="r2">
+                <div class="2">2</div>
+                <div class="3">3</div>
+                <div class="4">4</div>
+                <div class="5">5</div>
+            </div>
+            <div class="l2" style="background-color: orange;">1</div>
+        </div>
+    </din>
+</body>
+</html>

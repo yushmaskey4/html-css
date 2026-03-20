@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flipkart Checkout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: cursive; }
+
+    body { background: #f1f3f6; }
+    .header {
+      background: #2874f0;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .breadcrumb {
+      padding: 15px 30px;
+      font-size: 14px;
+      color: #555;
+    }
+    .container {
+      display: flex;
+      padding: 20px 30px;
+      gap: 20px;
+    }
+    .left, .right {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+    .left {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .right {
+      flex: 1;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+      gap: 10px;
+      color: #333;
+    }
+    .section-box {
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+    }
+    .address p, .email, .payment-option, .card-list p {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .link {
+      color: #2874f0;
+      font-size: 13px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .card-list {
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    .card {
+      margin-bottom: 8px;
+    }
+    .order-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .item-info {
+      display: flex;
+      gap: 10px;
+    }
+    .item-info img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+    .item-text {
+      font-size: 14px;
+    }
+    .item-title {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .discount {
+      font-size: 13px;
+      color: red;
+    }
+    .total {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      padding-top: 15px;
+      font-size: 15px;
+    }
+    .discount-link {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    .btn {
+      margin-top: 20px;
+      text-align: right;
+    }
+    button {
+      padding: 12px 24px;
+      background: #fb641b;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .powered-by {
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .icon {
+      font-size: 18px;
+      color: #2874f0;
+    }
+    .logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section img {
+  height: 30px;
+  width: auto;
+}
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo-section">
+        <span>Flipkart</span>
+  <img src="flipkart (2).png" alt="Flipkart Logo">
+  
+</div>
+
+    <div>Hello, Krishna</div>
+  </div>
+
+  <div class="breadcrumb">
+    SHOPPING CART &gt; <strong>CHECKOUT</strong> &gt; CONFIRMATION
+  </div>
+
+  <div class="container">
+    <!-- LEFT SECTION -->
+    <div class="left">
+      <!-- Shipping -->
+      <div class="section">
+        <div class="section-title">
+          <i class="fas fa-location-dot icon"></i> Shipping Address
+        </div>
+        <div class="section-box address">
+          <p><strong>Krishna Bahadur</strong></p>
+          <p>Green Peace Lincoln College, Biratagar Line</p>
+          <p>Itahari, Koshi, Nepal 56705</p>
+          <p class="email">Email: bahadur.krishna@gmail.com</p>
+          <span class="link">Edit</span> | <span class="link">Add new address</span>
+        </div>
+      </div>
+
+      <!-- Payment -->
+      <div class="section">
+        <div class="section-title">
+          <i class="fas fa-credit-card icon"></i> Payment Method
+        </div>
+        <div class="section-box">
+          <div class="payment-option">
+            <input type="radio" name="pay" checked> Nabil Credit Card (**** **** **** 4714)
+          </div>
+          <div class="payment-option">
+            <input type="radio" name="pay"> NIC Debit Card (**** **** **** 5321)
+          </div>
+          <span class="link">Add new payment</span>
+
+          <!-- Saved cards -->
+          <div class="card-list">
+            <p class="card"><i class="fas fa-wallet"></i> eSewa / Wallet</p>
+            <p class="card"><i class="fas fa-university"></i> Net Banking</p>
+            <p class="card"><i class="fas fa-money-bill-wave"></i> Cash on Delivery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right">
+      <div class="section-title">
+        <i class="fas fa-shopping-cart icon"></i> Your Order Summary
+      </div>
+      <div class="section-box">
+        <!-- Item 1 -->
+        <div class="order-item">
+          <div class="item-info">
+            <img src="bmw1.jpg" alt="bmwm4">
+            <div class="item-text">
+              <div class="item-title">BMW M4 Competition xDrive Coupe</div>
+              <div>3.0-liter BMW M TwinPower Turbo inline 6-cylinder (1 Qty)</div>
+              <div class="discount">45% Off ($ 90,600)</div>
+            </div>
+          </div>
+          <div>$ 49,830</div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="order-item">
+          <div class="item-info">
+            <img src="bmw2.jpg" alt="Headset">
+            <div class="item-text">
+              <div class="item-title">BMW M5 Sedan</div>
+              <div>The four-door sedan where sport and luxury intersect. (1 Qty)</div>
+              <div class="discount">23% Off ($ 63,750)</div>
+            </div>
+          </div>
+          <div>$ 49,087</div>
+        </div>
+
+        <!-- Totals -->
+        <div class="total">
+          <span>Total</span>
+          <span>$ 98,917</span>
+        </div>
+
+        <div class="discount-link">
+          <span class="link">Have a discount code?</span>
+        </div>
+
+        <div class="btn">
+          <button>PROCEED TO PAY</button>
+        </div>
+
+        <div class="powered-by">
+          Online payments powered via <strong>eSewa</strong><br>
+          Safe and Secure Payments. 100% Authentic Products.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

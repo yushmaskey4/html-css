@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bio Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            background: #fff;
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: #005f73;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        .highlight {
+            background-color: #ffffff;
+            padding: 2px 4px;
+        }
+        button {
+            background: #006d77;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #004d4d;
+        }
+        pre {
+            background: #f6f6f6;
+            padding: 10px;
+            border-left: 3px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bio Data</h1>
+    
+    <h2>Personal Information</h2>
+    <p><strong>Name:</strong> <em>Yush Maskey</em></p>
+    <p><strong>Age:</strong> <mark>20</mark> years</p>
+    <p><strong>Gender:</strong> Male</p>
+    <p><strong>Nationality:</strong> <abbr title="United States of America">USA</abbr></p>
+    
+    <h3>Contact Details</h3>
+    <p><strong>Email:</strong> john.doe@example.com</p>
+    <p><strong>Phone:</strong> +977 981-7381181</p>
+    <p><strong>Address:</strong> <q>Sundarharaincha-10, Morang, Koshi, Nepal</q></p>
+
+    <h3>Education</h3>
+    <ul>
+        <li><strong>Secondary Level School</strong> from <cite>Siddhartha Secondary School</cite></li>
+        <li><strong>High School</strong> from <cite>Sukuna Secondary School</cite></li>
+    </ul>
+
+    <h3>Skills</h3>
+    <p><code>Java</code>, <code>Python</code>, <code>HTML/CSS</code>, <code>SQL</code></p>
+
+    <h3>About Me</h3>
+    <blockquote>
+        "I believe in <del>hard</del> <ins>smart</ins> work and continuous learning."
+    </blockquote>
+    <p>
+        I am passionate about coding<sup>*</sup> and creating efficient software solutions. I love to explore new technologies and build meaningful projects.
+    </p>
+    <p><small>* Passion level: Extremely High</small></p>
+
+    <h4>My Favorite Quote</h4>
+    <pre>
+“Programs must be written for people to read,
+and only incidentally for machines to execute.” — Harold Abelson
+    </pre>
+
+    <h5>Hidden Talent</h5>
+    <p>I can solve a Rubik's cube in <strong>under 30 seconds</strong>!</p>
+
+    <h6>Form Example</h6>
+    <form onsubmit="return showAlert()">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    function showAlert() {
+        const name = document.getElementById("fullname").value;
+        alert("Bio Data submitted for " + name);
+        return false; // prevent actual form submission
+    }
+</script>
+
+</body>
+</html>

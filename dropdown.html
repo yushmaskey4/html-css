@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            background-color: green;
+            width: 40px;
+            color: white;
+            position: relative;
+        }
+        .dropdown-content{
+            background-color: whitesmoke;
+            width: 200px;
+            padding: 20px;
+            color: black;
+            display: none;
+            position: absolute;            
+        }
+        .dropdown-content a{
+            text-decoration: none;
+            color: black;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+            top: 0;
+            left: 40px;
+        }        
+    </style>
+</head>
+<body>
+    <h1>Dropdown Menu</h1>
+    <div class="dropdown">Here
+        <div class="dropdown-content">
+            <a href="./bmw3.jpeg">this is dropdown menu</a>  
+            
+        </div>
+    </div>
+</body>
+</html>

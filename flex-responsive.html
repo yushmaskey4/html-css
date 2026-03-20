@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        width: 100%;
+        height: 100vh;
+      }
+      header {
+        background: rgb(139, 0, 0);
+        height: 10%;
+        margin: 0 0 2px 0;
+      }
+      .menu {
+        background: green;
+        /* height: 75%; */
+      }
+      .ad2 {
+        background: gray;
+        /* height: 25%; */
+      }
+      .main {
+        background: purple;
+        width: 60%;
+      }
+      .ad1 {
+        background: red;
+        width: 20%;
+      }
+      footer {
+        background: rgb(107, 145, 166);
+        height: 10%;
+        margin: 2px 0 0px 0;
+      }
+      .content {
+        display: flex;
+        /* flex-grow: 1; */
+        /* height: calc(100vh - 20%); */
+        width: 100%;
+        gap: 2px;
+      }
+      .left {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      @media (max-width: 600px) {
+        .content {
+          display: block;
+          width: 100%;
+        }
+        .left {
+          display: block;
+          width: 100%;
+        }
+        .main,
+        .ad1 {
+          width: 100%;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>header</header>
+      <div class="content">
+        <div class="left">
+          <div class="menu">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste at
+            aspernatur consectetur minus consequuntur voluptates incidunt illum,
+            harum voluptatum fugiat quia soluta possimus delectus facere fugit
+            quo voluptatibus! Dolor, debitis!
+          </div>
+          <div class="ad2">ad2</div>
+        </div>
+        <div class="main">main</div>
+        <div class="ad1">ad1</div>
+      </div>
+      <footer>footer</footer>
+    </main>
+  </body>
+</html>

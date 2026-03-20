@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Full Name: </label>
+                    </td>
+                    <td>
+                        <input id="name" type="text" placeholder="enter name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email: </label>
+                    </td>
+                    <td>
+                        <input id="email" type="email" placeholder="enter e-mail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password: </label>
+                    </td>
+                    <td>
+                        <input id="password" type="password" placeholder="password required" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="c-password">Confirm Password: </label>
+                    </td>
+                    <td>
+                        <input id="c-password" type="password" placeholder="re-enter password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="number">Phone Number: </label>
+                    </td>
+                    <td>
+                        <input id="number" type="tel" placeholder="enter with country code" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">DOB: </label>
+                    </td>
+                    <td>
+                        <input type="date"  id="dob" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender: </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="provinces">Select Province</label>
+                    </td>
+                    <TD>
+                        <select id="provinces" required>
+                            <option value="Select Province" disabled selected>Select Province</option>
+                            <option value="koshi">Koshi</option>
+                            <option value="madhesh">Madhesh</option>
+                            <option value="bagmati">Bagmati</option>
+                            <option value="gandakii">Gandaki</option>
+                            <option value="lumbini">Lumbini</option>
+                            <option value="karnali">Karnali</option>
+                            <option value="sudurpashchim">Sudurpashchim</option>
+                        </select>
+                    </TD>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address: </label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="enter full address" required>
+                    </td>
+                </tr>    
+                </table>         
+            <input type="checkbox" name="" id="terms">
+            <label for="terms">I agree to the terms and condition</label>
+            <br><br>
+            <button>Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
