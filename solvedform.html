@@ -1,4 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .err {
+        color: red;
+        font-size: 18px;
+        margin-top: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="" id="form">
+      <input type="text" placeholder="name" id="name" />
+      <div class="err" id="name-err"></div> <br>
+
+      <input type="email" placeholder="email" name="email" id="email" />
+      <div class="err" id="email-err"></div> <br>
+
+      <input type="text" placeholder="age" name="age" id="age" />
+      <div class="err" id="age-err"></div> <br>
+
+      <input placeholder="password" type="password" name="password" id="password" />
+      <div class="err" id="passerr"></div> <br>
+
+      <input type="submit" value="submit" />
+    </form>
 <script>
+    function validateEmail() {
+        let email = document.getElementById("email").value.trim();
+        let pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (pattern.test(email)) {
+            document.getElementById("email-err").innerText = "";
+            return true;
+        } else {
+            document.getElementById("email-err").innerText = "Please enter a valid email address";
+            return false;
+        }
+    }
+
     function validateName() {
         let name = document.getElementById("name").value.trim();
         if (name === "") {
@@ -22,6 +65,26 @@
     }
 
     function validatePassword() {
-        
+        let password = document.getElementById("password").value;
+        let pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/;
+        if (pattern.test(password)) {
+            document.getElementById("passerr").innerText = "";
+            return true;
+        } else {
+            document.getElementById("passerr").innerText = "Password must be 8-16 characters long and include at least one uppercase letter, one lowercase letter, one digit, and one special character.";
+            return false;
+        }
     }
+
+    document.getElementById("name").addEventListener("keyup", validateName);
+    document.getElementById("age").addEventListener("keyup", validateAge);
+    document.getElementById("password").addEventListener("keyup", validatePassword);
+    document.getElementById("email").addEventListener("keyup", validateEmail);
+
+document.getElementById("form").addEventListener("submit", function(e) {
+    let isValid = validateName() && validateAge() && validatePassword() && validateEmail();
+    if (!isValid) {
+        e.preventDefault();
+    }
+})
 </script>
